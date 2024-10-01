@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheNbank - Online Banking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #6a0dad;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            color: #6a0dad;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        input[type="submit"] {
+            background-color: #9b30ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7a1da2;
+        }
+
+        .nav {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #6a0dad;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TheNbank</h1>
+    </header>
+
+    <div class="container">
+        <!-- Login Page -->
+        <h1>Login</h1>
+        <form action="#" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="adith" readonly><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <div class="nav">
+            <a href="#signup">Sign Up</a>
+            <a href="#add-beneficiary">Add Beneficiary</a>
+            <a href="#make-transaction">Make Transaction</a>
+        </div>
+    </div>
+
+    <div class="container" id="signup">
+        <!-- Signup Page -->
+        <h1>Sign Up</h1>
+        <form action="#" method="POST">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" placeholder="Enter a new username"><br>
+
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" placeholder="Enter a new password"><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <div class="container" id="add-beneficiary">
+        <!-- Add Beneficiary Page -->
+        <h1>Add Beneficiary</h1>
+        <form action="#" method="POST">
+            <label for="beneficiary-name">Beneficiary Name:</label>
+            <input type="text" id="beneficiary-name" name="beneficiary-name" placeholder="Enter beneficiary name"><br>
+
+            <label for="beneficiary-account">Beneficiary Account Number:</label>
+            <input type="text" id="beneficiary-account" name="beneficiary-account" placeholder="Enter account number"><br>
+
+            <input type="submit" value="Add Beneficiary">
+        </form>
+    </div>
+
+    <div class="container" id="make-transaction">
+        <!-- Make Transaction Page -->
+        <h1>Make a Transaction</h1>
+        <form action="#" method="POST">
+            <label for="from-account">From (Account Holder):</label>
+            <input type="text" id="from-account" name="from-account" value="adith" readonly><br>
+
+            <label for="to-account">To (Beneficiary):</label>
+            <input type="text" id="to-account" name="to-account" value="deema" readonly><br>
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount"><br>
+
+            <input type="submit" value="Transfer">
+        </form>
+    </div>
+
+</body>
+</html>
